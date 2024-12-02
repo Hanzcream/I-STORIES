@@ -17,6 +17,8 @@ a{
     color: blue;
 }
 
+
+
 h2[id="WELCOME"]{
     color: #4379F2;
     text-transform: capitalize;
@@ -65,10 +67,17 @@ img {
 }
 
 /* Style for the img inside the div */
-.hoverable-image {
+
+.hoverable-image,
+.hover2-image,
+.hover3-image,
+.hover4-image,
+.hover5-image,
+.hover6-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 200px; /* Same fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    transition: transform 0.3s ease, height 0.3s ease; /* Smooth transition on hover */
 }
 
 /* Hover effect to change the image source using CSS */
@@ -93,13 +102,7 @@ img {
     
 }
 
-.hover2-image{
-    margin-left: 50px;
-}
 
-.hover3-image{
-    margin-left: 50px;
-}
 
 .hover3-image:hover {
     content: url('https://www.shutterstock.com/image-photo/anime-artistic-image-pretty-cute-600w-2502442307.jpg');
@@ -114,18 +117,13 @@ img {
     height:59%;
     position: relative; /* Keep position context to avoid layout shift */
 }
-.hover4-image{
-    margin-left: 50px;
-}
+
 
 .hover5-image:hover {
     content: url('https://thumbs.dreamstime.com/b/unavailable-label-sign-round-stamp-band-ribbon-unavailable-label-sign-round-stamp-ribbon-band-196363475.jpg');
     transform: scale(1); /* Scale slightly for hover effect */
     height:59%;
     position: relative; /* Keep position context to avoid layout shift */
-}
-.hover5-image{
-    margin-left: 50px;
 }
 
 .hover6-image:hover {
@@ -134,16 +132,17 @@ img {
     height:59%;
     position: relative; /* Keep position context to avoid layout shift */
 }
-.hover6-image{
-    margin-left: 50px;
-}
-
 
 /* Prevent the text from disappearing on hover */
 .image-container {
     position: relative; /* Maintain positioning context */
     display: inline-block;
     text-align: center;
+}
+figcaption.description {
+    padding: 15px;
+    font-size: 1rem !important;
+    color: #555;
 }
 
 figcaption.description {
@@ -306,6 +305,7 @@ figure:hover .description {
     margin: 0;
 }
 
+
 /* Header Title */
 .I-STORIES {
     text-align: center;
@@ -314,34 +314,42 @@ figure:hover .description {
 
 .I-STORIES a {
     text-decoration: none;
-    color: #2c3e50;
-    font-size: 1.5rem;
+    color: #2d3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
 }
-.description a {
-    font-size: 1.5rem;
+
+.I-STORIES a:hover {
+    color: #3498db;
 }
 
 hr {
     margin: 20px 0;
     border: none;
-    border-top: 2px solid #2c3e50;
+    border-top: 2px solid #E8E8E8;
 }
+
 
 /* GIF Image */
 .gif {
-    display: block;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 20px auto !important;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
 /* Welcome Text */
 .text-center {
-    text-align: center !important;
-    font-size: 2.5rem !important;
-    color: #34495e;
-    margin: 20px 0 !important;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 40px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 
 /* Subtitle */
 h3 {
@@ -353,27 +361,26 @@ h3 {
 
 /* Image Row */
 .image-row {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    flex-wrap: wrap !important;
-    margin: 20px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
 }
 
 /* Image Container */
 .image-container3 {
     width: 300px;
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s;
-    margin-right: 20px;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .image-container3:hover {
-    transform: translateY(-5px) !important;
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .hoverable-image, .hover2-image, .hover3-image, .hover4-image, .hover5-image, .hover6-image {
@@ -386,15 +393,85 @@ h3 {
 }
 
 .hoverable-image:hover, .hover2-image:hover, .hover3-image:hover, .hover4-image:hover, .hover5-image:hover, .hover6-image:hover {
-    transform: scale(1.05) !important;  
+    transform: scale(1.05);
+    filter: brightness(0.8);
 }
-
 .description {
     padding: 15px;
     font-size: 1rem !important;
     color: #555;
 }
 
+figcaption.description {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #f4f6f8;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+figcaption.description a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.image-container3:hover .description {
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.STORYPAGE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FEF9F2;
+    min-height: 100vh;
+}
+
+figcaption.description a:hover {
+    color: #7ed957;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7ed957;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container3 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-center {
+        font-size: 2rem;
+    }
+
+    .I-STORIES a {
+        font-size: 1.5rem;
+    }
+
+    .image-container3 {
+        width: 90%;
+    }
+}
 .description a {
     text-decoration: none;
     color: #2980b9;

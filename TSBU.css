@@ -45,10 +45,10 @@ body {
 
 /* Banner Image */
 .banner img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin: 20px 0 !important;
 }
 
 /* Chapter Title */

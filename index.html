@@ -4,73 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>I-STORIES - Home</title>
     <link rel="stylesheet" href="style2.css">
-   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="Homepage">
-        <!-- Sticky Navigation Bar -->
-        <div class="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="CONTACT.html">Contact</a>
-            <a href="I-STORIES.html">I-STORIES</a>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html" class="logo">I-STORIES</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="I-STORIES.html">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>I-STORIES</span></h1>
+            <p>Your sanctuary for captivating stories.</p>
+            <a href="I-STORIES.html" class="cta-button">Start Reading</a>
         </div>
+    </section>
 
-        <div class="hero">
-            <h1 class="Home-Text_heading">Welcome to I-STORIES</h1>
-        </div>
-
-        <h2 id="WELCOME">Meet the Creator</h2>
-        <div class="image-container">
-            <img class="Homepage-img" src="images/Minimalist Black & White Modern Meet The Team Linkedin Post .png" alt="Photo of the Creator">
-        </div>
-
-        <h3 class="Creator">Gabriel Hangad, Creator of I-STORIES</h3>
-        <p class="Description">
-            Gabriel Hangad A.K.A CreamO is the person behind the I-STORIES website, a platform filled with imagination, based on Gab's real experiences. He aims to create a space where readers, particularly Filipinos, can enjoy stress-relieving stories in Tagalog, Cebuano, and English. Combining "I" for "Me" and "STORIES" for both "Imaginary" or real, this website is a creative outlet inspired by GENDESU. <br>
-            <a href="About.html">Learn more about the creator</a>
-        </p>
-
-        <hr>
-
-        <h2 class="Home-Text_headingh2">More About This Website</h2>
-        <img src="images/logo.gif" alt="Logo of The Website" width="100%">
-
-        <p>
-            Gabriel loves reading manga, wattpad, and more. This website reflects his passion and dream of becoming a writer, creating a community for fellow enthusiasts. Although he's a beginner, he believes that through perseverance, he will achieve his dreams. The website is not just about sharing stories, but also about fostering a supportive environment for writers.
-        </p>
-
-        <h4>If you want to read stories now, just click the link below:</h4>
-        <a href="I-STORIES.html" class="button">I-STORIES</a>
-
-        <!-- Testimonials Section -->
-        <div class="testimonials">
-            <h2>What Readers Say</h2>
-            <div class="testimonial-card">
-                <p draggable="true">"I-STORIES is a great place to relax and unwind with creative and relatable stories. I'm hooked!"</p>
-            </div>
-            <div class="testimonial-card">
-                <p draggable="true">"Gabriel's stories remind me of real-life situations, but with a unique imaginative twist. It's fun and inspiring!"</p>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <img src="/images/Minimalist Black & White Modern Meet The Team Linkedin Post .png" alt="Photo of the Creator" class="about-img">
+            <div class="about-text">
+                <h2>Meet the Creator</h2>
+                <p>Gabriel Hangad, also known as CreamO, is the mastermind behind I-STORIES—a platform inspired by real-life and imaginative experiences.</p>
+                <a href="About.html" class="learn-more">Learn More</a>
             </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p draggable="true">Follow Gabriel Hangad on social media! Just click on profile.</p>
-            <div class="social-icons">
-                <a class="blue" href="profile.html">PROFILE</a>
+    <!-- Features Section -->
+    <section class="features">
+        <h2>What Makes Us Special</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="/images/DALL·E 2024-12-02 21.19.59 - Create a clean and modern minimalist illustration for a website feature, styled to fit a tech-inspired website aesthetic_ 1. A creative story concept,.webp" alt="Creative Stories">
+                <h3>Creative Stories</h3>
+                <p>Immerse yourself in tales crafted with imagination and heart.</p>
+            </div>
+            <div class="feature">
+                <img src="/images/Multilingual.webp" alt="Multilingual Content">
+                <h3>Multilingual Content</h3>
+                <p>Enjoy stories in Tagalog, Cebuano, and English.</p>
+            </div>
+            <div class="feature">
+                <img src="images/Communitiy spirit.webp" alt="Community Spirit">
+                <h3>Community Spirit</h3>
+                <p>Join a growing network of readers and writers.</p>
+            </div>
+        </div>
+    </section>
 
-                <p draggable="true">Also follow our page on I-STORIES to keep updated.</p>
-                <div class="social-icons">
-                    <a class="blue" href="I-STORIES__page.html">I-STORIES</a>
-            </div>    
-        </footer>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Readers Say</h2>
+        <div class="testimonial-container">
+            <blockquote>
+                "I-STORIES is my go-to for relaxing with relatable and creative stories."
+                <cite>- Reader 1</cite>
+            </blockquote>
+            <blockquote>
+                "Gabriel's unique storytelling has inspired me to start writing my own stories!"
+                <cite>- Reader 2</cite>
+            </blockquote>
+        </div>
+    </section>
 
-        <!-- Back to Top Button -->
-        <div id="back-to-top">↑</div>
-    </div>
-</body>   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Follow Gabriel Hangad on social media to stay updated!</p>
+            <div class="social-links">
+                <a href="profile.html">Profile</a>
+                <a href="I-STORIES__page.html">I-STORIES Page</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top">↑</div>
+</body>
+
+</html>
