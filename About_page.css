@@ -1,8 +1,8 @@
 /* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    color: #333333; /* Dark grey text for contrast */
-    background-color: #F2F2F2; /* Light grey background */
+    font-family: 'Verdana', sans-serif;
+    color: #333333;
+    background-color: #E0F7FA; /* Light cyan background */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #6E6FA8; /* Dark purple color for navigation */
+    background-color: #673AB7; /* Deep purple navigation bar */
     padding: 15px 20px;
     text-align: center;
 }
@@ -24,22 +24,22 @@ nav a {
 }
 
 nav a:hover {
-    color: #CCCCFF; /* Lighter shade on hover */
+    color: #FFEB3B; /* Bright yellow on hover */
 }
 
 /* Main Content Container */
 .ABOUTPAGE {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #FFFFFF; /* White background for main content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
 }
 
 .ABOUTPAGE:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
+    transform: scale(1.03); /* Subtle zoom effect on hover */
 }
 
 /* Headings and Text */
@@ -48,48 +48,48 @@ h2, h3 {
 }
 
 h2 a {
-    color: #6E6FA8; /* Purple for the return link */
+    color: #6E6FA8; 
     text-decoration: none;
 }
 
 h2 a:hover {
-    color: #5A5B8C; /* Slightly darker purple on hover */
+    color: #5A5B8C; 
 }
 
 p, ul, ol {
-    color: #555555; /* Medium grey for paragraph and list text */
+    color: #555555; 
 }
 
 /* Highlighted Text */
 .highlight {
-    background-color: #FFEDCC; /* Light yellow background for emphasis */
+    background-color: #FFEDCC; 
     padding: 10px;
     border-radius: 4px;
 }
 
 /* Image Styling */
 .gif {
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect for the image */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 /* Button Styling */
 .action-button {
-    background-color: #6E6FA8; /* Button color */
-    color: #FFFFFF; /* Button text color */
-    padding: 10px 20px;
+    background-color: #673AB7; 
+    color: #FFFFFF; 
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background color */
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out; 
     margin: 20px 0;
 }
 
 .action-button:hover {
-    background-color: #5A5B8C; /* Darker purple on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #5A5B8C; 
+    transform: translateY(-2px); 
 }
 
 /* List Styling */
@@ -98,61 +98,62 @@ ul, ol {
 }
 
 ul li, ol li {
-    color: #555555; /* Medium grey for list items */
+    color: #555555; 
 }
 
 /* Link Styling */
 a {
-    color: #6E6FA8; /* Purple for general links */
+    color: #673AB7; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #5A5B8C; /* Darker purple on hover */
+    color: #FFEB3B; 
 }
 
-/* Custom Link Styling */
 .blue-link {
-    color: #6E6FA8; /* Purple color for special link */
+    color: #673AB7; 
 }
 
 .blue-link:hover {
-    color: #5A5B8C; /* Darker purple on hover */
+    color: #5A5B8C; 
 }
 
 /* Clickable Text Styling in ABOUTPAGE */
 .clickable-text {
-    color: #6E6FA8; /* Purple color for clickable text */
+    color: #673AB7; 
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
-    text-decoration: underline; /* Underline to indicate it's clickable */
+    transition: color 0.4s ease-in-out;
+    text-decoration: underline; 
 }
 
 .clickable-text:hover {
-    color: #5A5B8C; /* Darker purple on hover */
-    text-decoration: none; /* Remove underline on hover for effect */
+    color: #5A5B8C; 
+    text-decoration: none; 
 }
 
 /* Page Divider */
 hr {
-    border: 1px solid #CCCCCC; /* Light grey for horizontal lines */
+    border: 1px solid #CCCCCC; 
     margin: 20px 0;
 }
 
 /* Welcome Text Styling */
 h1 {
-    color: #FFFFFF; /* White text for welcome message */
+    color: #FFFFFF; 
     font-size: 36px;
     text-align: center;
     margin-top: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
 }
 
 /* Add CSS styles for buttons and hover effects */
 .buttons-container {
  margin-top: 20px;
  }
+
+
 
 .animated-button {
 background-color: #57aaf3;
@@ -164,97 +165,99 @@ text-decoration: none;
 display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
-transition: transform 0.2s; /* Smooth scaling */
+transition: transform 0.2s; 
 cursor: pointer;
-border-radius: 5px; /* Rounded corners */
+border-radius: 5px; 
 }
 
 .animated-button:hover {
-transform: scale(1.1); /* Scale up on hover */
+transform: scale(1.05); 
 }
 
 .clickable-text {
-color: #007BFF; /* Link color */
-text-decoration: none; /* Remove underline */
+color: #007BFF;
+text-decoration: none; 
 }
 
 .clickable-text:hover {
-text-decoration: underline; /* Underline on hover */
+text-decoration: underline; 
 }
 
 /* Catchy Intro Paragraph */
 .catchy-intro {
-    font-size: 1.2em; /* Slightly larger font for emphasis */
-    font-weight: bold; /* Make it bold */
-    color: #FFFFFF; /* White color for better contrast */
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: #FFFFFF; 
     background: linear-gradient(135deg, rgba(110, 111, 168, 0.8), rgba(168, 168, 216, 0.8)); /* Transparent gradient for better readability */
-    padding: 15px; /* Padding for better spacing */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center align the text */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
-    position: relative; /* Positioning for the pseudo-element */
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center; 
+    transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out; 
+    position: relative; 
 }
 
-/* Add a hover effect */
 .catchy-intro:hover {
-    transform: scale(1.05); /* Slightly enlarge the paragraph on hover */
-    background-color: rgba(168, 168, 216, 0.9); /* Change background on hover */
+    transform: scale(1); 
+    background-color: rgba(168, 168, 216, 0.9); 
 }
 
 /* Optional: Add a decorative effect */
 .catchy-intro:before {
-    content: '✨'; /* Add a sparkle before the text */
-    position: absolute; /* Position it relative to the parent */
-    left: -20px; /* Move it slightly to the left */
-    top: 0; /* Align it to the top */
-    font-size: 1.5em; /* Size for the sparkle */
-    animation: sparkle 1.5s infinite; /* Add animation */
+    content: '✨'; 
+    position: absolute; 
+    left: -30px; 
+    top: 0; 
+    font-size: 2em; 
+    animation: sparkle 1.5s infinite; 
 }
 
 /* Keyframes for sparkle effect */
 @keyframes sparkle {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-}
+}  
+
+
 
 /* Button Style */
 .smile-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #6e60ef; /* purple background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1.2em; /* Larger text */
-    transition: background-color 0.3s ease; /* Transition effect */
-    text-align: center; /* Center the text */
+    padding: 12px 24px;
+    background-color: #6E6FA8; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.5em; 
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out; 
+    text-align: center; 
 }
 
 /* Button hover effect */
 .smile-button:hover {
-    background-color: #57aaf3; /* blue on hover */
+    background-color: #5A5B8C; 
+    transform: translateY(-3px); 
 }
 
 /* Hidden checkbox */
 .toggle-display {
-    display: none; /* Hide the checkbox */
+    display: none; 
 }
 
 /* Story container style */
 .story-container {
-    display: none; /* Initially hidden */
-    margin-top: 15px; /* Space above the paragraph */
-    padding: 15px;
+    display: none;
+    margin-top: 15px; 
+    padding: 20px;
     background: linear-gradient(135deg, rgba(209, 209, 255, 0.8), rgba(235, 163, 163, 0.8)); /* Background */
-    color: #FFFFFF; /* Text color */
-    border-radius: 8px; /* Rounded corners */
+    color: #FFFFFF; 
+    border-radius: 10px; 
 }
 
 /* Show the paragraph when checkbox is checked */
 .toggle-display:checked + .story-container {
-    display: block; /* Show the paragraph */
+    display: block; 
 }
 
 

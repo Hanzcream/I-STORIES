@@ -1,107 +1,167 @@
-/* General Page Styling */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #fff;
+    overflow-x: hidden;
 }
-
-.CONTACTPAGE {
-    background-color: #F8F8F8; /* Lighter background for cleaner look */
+.ulko {
+    color: #1e1e1e !important;
+}
+/* Header */
+.header {
     padding: 20px;
-    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-/* Contact Page Header */
-h2 {
-    color: #2f4f4f;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* Section Titles */
-h3 {
-    text-transform: capitalize;
-    color: #555;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* Contact Section */
-.contact-section {
-    background-color: #FFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 600px;
-}
-
-/* Links */
-a {
-    color: #4379F2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.blue-link {
-    color: #4379F2;
+.return-home {
+    color: #7ed957;
     text-decoration: none;
     font-weight: bold;
+    background: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.return-link {
-    color: #4379F2;
-    display: block;
-    text-align: left;
-    font-size: 16px;
-    padding: 10px 0;
+.return-home:hover {
+    background: #444;
 }
 
-.return-link:hover {
-    text-decoration: underline;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Contact Information Styling */
-.contact-details {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #7ed957;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Contact Cards */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.contact-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 0.6s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.contact-card h2 {
+    font-size: 1.5rem;
+    color: #7ed957;
     margin: 15px 0;
 }
 
-.contact-details li {
-    list-style: none;
-    margin-bottom: 10px;
+.contact-card p,
+.contact-card ul {
+    font-size: 1rem;
+    color: #ddd;
 }
 
-/* Buttons for Call and Social Media */
-.contact-button {
+.contact-card a {
+    color: #7ed957;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #fff;
+}
+
+/* Icons */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    background-size: cover;
+}
+
+.email-icon {
+    background-image: url('https://img.icons8.com/ios-filled/50/7ed957/email.png');
+}
+
+.phone-icon {
+    background-image: url('https://img.icons8.com/ios-filled/50/7ed957/phone.png');
+}
+
+.social-icon {
+    background-image: url('https://img.icons8.com/ios-filled/50/7ed957/network.png');
+}
+
+/* Button */
+.btn {
     display: inline-block;
-    background-color: #4379F2;
-    color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #8EB486;
+    color: #111;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-.contact-button:hover {
-    background-color: #365AA5;
+.btn:hover {
+    background: #BCCCDC;
 }
 
-img {
-    display: inline-block; /* Keeps the image inline with other elements */
-    max-width: 100%; /* Ensures the image scales properly */
-    height: auto; /* Maintains aspect ratio */
-    width: 100% !important;
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

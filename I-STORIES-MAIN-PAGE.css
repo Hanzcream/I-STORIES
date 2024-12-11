@@ -1,0 +1,298 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #00f2fe;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.btn-primary {
+    background: #00f2fe;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+/* Stories Section */
+.stories {
+    padding: 4rem 1rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.story-card {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: white;
+}
+
+.story-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+}
+
+.story-content {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.story-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.story-content p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.story-content .btn-primary {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background: #4facfe;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General Grid Layout */
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Card Styling */
+.story-card {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image Container */
+.image-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8) contrast(1.2);
+    cursor: pointer;
+}
+
+/* Story Content */
+.story-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.story-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.story-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #5148d3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* General Layout */
+.hover-section {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.hover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.hover-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.hover-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+/* Hover Effects */
+.hoverable-image:hover {
+    content: url('https://i.ytimg.com/vi/FX9f3wfYGV4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_rCsM1PdFJJIX4fmf7RrjosbTSQ');
+}
+
+.hover2-image:hover {
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsHrry_2jvr_r6z_mSLvrs42nYstJ8WW1jQ&s');
+}
+
+.hover3-image:hover {
+    content: url('https://www.shutterstock.com/image-photo/anime-artistic-image-pretty-cute-600w-2502442307.jpg');
+}
+
+.hover4-image:hover {
+    content: url('https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/074abebc-58d0-4b37-86d6-2229406b6ed9/83f9e6f8-2007-45ac-bb45-8d048fcf23ab.png');
+}
+
+.hover5-image:hover {
+    content: url('https://thumbs.dreamstime.com/b/unavailable-label-sign-round-stamp-band-ribbon-unavailable-label-sign-round-stamp-ribbon-band-196363475.jpg');
+}
+
+.hover6-image:hover {
+    content: url('https://thumbs.dreamstime.com/b/unavailable-label-sign-round-stamp-band-ribbon-unavailable-label-sign-round-stamp-ribbon-band-196363475.jpg');
+}
+

@@ -3,87 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I-STORIES</title>
-    <link rel="stylesheet" href="style.css">
+    <title>I-STORIES | Dive Into Worlds</title>
+    <link rel="stylesheet" href="I-STORIES-MAIN-PAGE.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
-<body class="STORYPAGE">
-    <div>
-        <h2 class="I-STORIES"> <a href="index.html">Return to Homepage</a> </h2>
-        <hr>
-        <img src="images/I-STORIES.gif" alt="I-STORIES photo" class="gif"> 
-        <hr>
-        <div class="istories-images"> 
-            <h1 class="text-center">WELCOME TO I-STORIES</h1>
-            <h3>The Space Between Us</h3>
-            <div class="image-row">
-                <!-- First image with description -->
-                <figure class="image-container3">
-                    <img class="hoverable-image" src="images/462052543_529388456381555_6430566450330794278_n.png" alt="The Space"> 
-                    <figcaption class="description"> 
-                        <a href="The space Between Us.html">The Space Between Us<br></a>
-                        This story is about a boy in love <br>
-                        with a girl who has a boyfriend that <br>
-                        time and the boy became her bbf. <br>
-                        Until the boy finally got the girl <br>
-                        to be his girlfriend, but the boy <br>
-                        got to taste his own medicine....</figcaption>
-                </figure>
-                <!-- Second image with description -->
-                <figure class="image-container3">
-                    <img class="hover2-image" src="images/462359580_472095999313701_1574834899789969055_n.png" alt="Picture no gf since birth">
-                    <figcaption class="description">
-                        <a href="NO-GF-SINCE-BIRTH.html"> Forever the Best Man, Never the Boyfriend</a> <br>
-                        This story is all about a boy who <br>
-                        has never been experienced na <br>
-                        magka-jowa, hanggang sa <br>
-                        may dumating sa buhay niya <br>
-                        na babae na sumira sa buhay niya....
-                        </figcaption>
-                </figure>
-                 <!-- Third image with description -->
-                <figure class="image-container3">
-                    <img class="hover3-image" src="images/HAPPINESS.png" alt="Picture H A P P I N E S S">
-                    <figcaption class="description">
-                        <a href="HAPPINESS.html"> H A P P I N E S S</a> <br>
-                        This is a story about a boy who didn't <br>
-                        like going to school and wished he could <br>
-                        just skip it. Then, he started getting <br>
-                        tutored by a girl who had money and <br>
-                        everything she could want, except for one thing she truly needed...
-                        </figcaption>
-                </figure>
-                <figure class="image-container3">
-                    <img class="hover4-image" src="images/TRUST YOUR FEELINGS.png" alt="Picture TRUST YOUR FEELINGS">
-                    <figcaption class="description">
-                        <h3> TRUST YOUR FEELINGS </h3>
-                       This story is still on going... <br>
-                       You cannot read this first <br>
-                       becuase the writer isn't finish with this <br>
-                       THANK YOU FOR YOUR UNDERSTANDING.
-                        </figcaption>
-                </figure>
-                <figure class="image-container3">
-                    <img class="hover5-image" src="images/EMOTIONAL INSURANCE.png" alt="Picture EMOTIONAL INSURANCE">
-                    <figcaption class="description">
-                        <h3> EMOTIONAL INSURANCE </h3>
-                       This story is not yet available...
-                        </figcaption>
-                </figure>
-                <figure class="image-container3">
-                    <img class="hover6-image" src="images/NEW BEGINNING.png" alt="Picture NEW BEGINNING">
-                    <figcaption class="description">
-                        <h3> NEW BEGINNING </h3>
-                       This story is not yet available...
-                        </figcaption>
-                </figure>
-                
-                
-            </div>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <a href="index.html" class="logo">I-STORIES</a>
+            <a href="index.html" class="btn-secondary">Return to Homepage</a>
+        </nav>
+        <div class="hero-text">
+            <h1>Welcome to I-STORIES</h1>
+            <p>Your Journey Begins Here</p>
+            <button class="btn-primary" onclick="scrollToSection('hover-section')">
+                Explore Stories
+            </button>
         </div>
-    </div>
+    </header>
+
+    <!-- Stories Section -->
+    <section id="hover-section" class="hover-section">
+        <h2 class="section-title">STORIES TO DISCOVER</h2>
+        
+            <div class="story-grid">
+                <!-- Story Cards -->
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hoverable-image" src="images/462052543_529388456381555_6430566450330794278_n.png" alt="Image 1">
+                    </div>
+                    <div class="story-content">
+                        <h3>The Space Between Us</h3>
+                        <p>A boy in love with a girl who's already taken... until fate takes a twist.</p>
+                        <a href="The space Between Us.html" class="btn-primary">Read Now</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hover2-image" src="images/462359580_472095999313701_1574834899789969055_n.png" alt="Image 2">
+                    </div>
+                    <div class="story-content">
+                        <h3>Forever the Best Man</h3>
+                        <p>The struggles of being the nice guy who never gets the girl. Can he change his story?</p>
+                        <a href="NO-GF-SINCE-BIRTH.html" class="btn-primary">Read Now</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hover3-image" src="images/HAPPINESS.png" alt="Image 3">
+                    </div>
+                    <div class="story-content">
+                        <h3>Happiness</h3>
+                        <p>One boy. One tutor. A journey to discover what money can't buy.</p>
+                        <a href="HAPPINESS.html" class="btn-primary">Read Now</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hover4-image" src="images/TRUST YOUR FEELINGS.png" alt="Image 4">
+                    </div>
+                    <div class="story-content">
+                        <h3>Trust Your Feelings</h3>
+                        <p>This story is still ongoing. The writer isn’t finished yet. Thank you for understanding!</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hover5-image" src="images/EMOTIONAL INSURANCE.png" alt="Image 5">
+                    </div>
+                    <div class="story-content">
+                        <h3>Emotional Insurance</h3>
+                        <p>This story is not yet available. Stay tuned for updates!</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="hover-card">
+                        <img class="hover6-image" src="images/NEW BEGINNING.png" alt="Image 6">
+                    </div>
+                    <div class="story-content">
+                        <h3>New Beginning</h3>
+                        <p>This story is not yet available. Something exciting is coming soon!</p>
+                    </div>
+                </div>
+            </div>       
+    </section>
+
+    <footer>
+        <p>&copy; 2024 I-STORIES. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const targetSection = document.getElementById(sectionId);
+            const offset = targetSection.offsetTop; 
+
+           
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>

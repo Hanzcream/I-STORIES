@@ -189,7 +189,7 @@ figure:hover .description {
 
 /* profilepage */
 .profilepage {
-    background-color: #111;
+    background-color: #D9EAFD !important;
     margin: 0; 
     padding: 0; 
     height: 100%; 
@@ -201,7 +201,7 @@ figure:hover .description {
     height: 100vh; 
 }
 .profilepage {
-    background-color: #111 !important; 
+    background-color: #D4EBF8 !important; 
     font-family: Arial, sans-serif !important;
     display: flex !important;
     justify-content: center !important;
@@ -210,7 +210,7 @@ figure:hover .description {
     margin: 0 !important; 
 }
 .profile-card {
-    background-color: #1e1e1e !important; 
+    background-color: #3B1C32 !important; 
     padding: 20px !important;
     border-radius: 10px !important;
     text-align: center !important;
